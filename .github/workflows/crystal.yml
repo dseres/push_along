@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: shards install
     - name: Build exe
-      run: shards build -b 
+      run: shards build
     - name: Run tests
       run: crystal spec
     - name: Build docs
