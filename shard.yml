@@ -1,0 +1,17 @@
+name: map_runner_cr
+version: 0.1.0
+
+authors:
+  - dseres <dseres001@gmail.com>
+
+targets:
+  map_runner_cr:
+    main: src/map_runner_cr.cr
+crystal: 1.2.1
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    version: "~> 1.0"
+
+license: MIT
