@@ -13,5 +13,10 @@ dependencies:
   kemal:
     github: kemalcr/kemal
     version: "~> 1.0"
-
+  spec-kemal:
+    github: kemalcr/spec-kemal
+    version: "~> 1.0"
+  dag:
+    github: dseres/dag
+    verstion: "~> 0.0"
 license: MIT

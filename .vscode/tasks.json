@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "crystal",
+			"command": "spec",
+			"problemMatcher": [],
+			"label": "Crystal: spec",
+			"options": {
+				"env": {
+					"KEMAL_ENV": "test"
+				}
+			}
+		}
+	]
+}
