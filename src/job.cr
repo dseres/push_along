@@ -8,23 +8,36 @@ module MapRunnerCr
         Running
         Successful
         Failed
+        Timeout
+    end
+
+    # Represents the result of a job
+    class Result
+        @property status : JobStatus
+        @property output : String
+        @property running_time : Int32
+
+        def initialize(@status, @output, @running_time)
+        end
     end
     
     #A job module. Every type of jobs should include this abstrat module. 
     module Job
-        getter status = JobStatus::Ready
         getter name : String
-        getter command : String  
+        getter status = JobStatus::Ready
         getter description : String
-        
         getter running_time = 0 
         getter timeout : Int32 
-        
+        getter dependencies = [] of Job
 
-        def initialize(@name, @command, @description = "", @timeout=0); end
+        def initialize(@name, @command, @description = "", @timeout=0, dependencies = [] of Job); end
 
         def hash
             name.hash
+        end
+
+        def add_dependency( other : Job)
+            dependencies << other
         end
 
         abstract def perform : Boolean
@@ -32,7 +45,7 @@ module MapRunnerCr
         def run
             @status = Status::Running
             puts "Job with id #{@id} is running..."
-            result = perform
+            result, output = perform
             if result.success?
               @status = Status::Successfull
             else
@@ -46,10 +59,16 @@ module MapRunnerCr
     class ConsoleJob
         include Job
 
+        getter commands
+        
+        def initialize( @commands = [] of String)
+        end
+
         def perform
             process = Process.new(@command, shell: true, output: Process::Redirect::Pipe)
             output = process.output.gets_to_end
-            process.wait
+            result =  process.wait
+            { result, output}
         end
     end
 end
