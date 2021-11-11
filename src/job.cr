@@ -14,9 +14,12 @@ module MapRunnerCr
 
     # Represents the result of a job
     class Result
+        #Return status of a Job
         property status : JobStatus
+        #Output buffer of a Job
         property output : String
-        property running_time : Int32
+        #Running time in milliseconds
+        property running_time : UInt64
 
         def initialize(@status, @output, @running_time)
         end
