@@ -1,4 +1,5 @@
 require "kemal"
+require "./job"
 
 # TODO: Write documentation for `MapRunnerCr`
 module MapRunnerCr

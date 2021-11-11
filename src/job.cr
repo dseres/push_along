@@ -25,13 +25,14 @@ module MapRunnerCr
     #A job module. Every type of jobs should include this abstrat module. 
     module Job
         getter name : String
-        getter status = JobStatus::Ready
         getter description : String
         getter running_time = 0 
-        getter timeout : Int32 
-        getter dependencies = [] of Job
+        getter dependencies : Array(Job)
 
-        def initialize(@name, @command, @description = "", @timeout=0, dependencies = [] of Job); end
+        getter status = JobStatus::Ready
+        getter timeout : Int32 
+
+        def initialize(@name, @description = "", @timeout=0, @dependencies = [] of Job); end
 
         def hash
             name.hash
@@ -41,7 +42,7 @@ module MapRunnerCr
             dependencies << other
         end
 
-        abstract def perform : Boolean
+        abstract def perform : {Process::Status, String }
 
         def run
             @status = Status::Running
@@ -53,7 +54,7 @@ module MapRunnerCr
               @status = Status::Failed
             end
             puts "job with  id #{@id} is finished with status: #{@status}"
-            {@status}
+            Result.new(@status, output, 0)
         end
     end
 
@@ -62,14 +63,14 @@ module MapRunnerCr
 
         getter commands
         
-        def initialize( @commands = [] of String)
+        def initialize( @name, @commands = [] of String, @description = "", @timeout=0, @dependencies = [] of Job)
         end
 
-        def perform
+        def perform : Tuple(Process::Status, String)
             process = Process.new(@command, shell: true, output: Process::Redirect::Pipe)
             output = process.output.gets_to_end
-            result =  process.wait
-            { result, output}
+            status =  process.wait
+            {status, output}
         end
     end
 end
