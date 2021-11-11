@@ -9,13 +9,14 @@ module MapRunnerCr
         Successful
         Failed
         Timeout
+        Skipped
     end
 
     # Represents the result of a job
     class Result
-        @property status : JobStatus
-        @property output : String
-        @property running_time : Int32
+        property status : JobStatus
+        property output : String
+        property running_time : Int32
 
         def initialize(@status, @output, @running_time)
         end

@@ -1,7 +1,4 @@
 {
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-    //"editor.fontLigatures": true,
     "editor.fontLigatures": "'ss05'" //Traditional 'at' 
 }
-// != == -> <= >= <=> <---<--> //
-// r 012 ->{} 0 @ ~= =~
