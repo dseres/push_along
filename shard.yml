@@ -1,4 +1,4 @@
-name: map_runner_cr
+name: push_along
 version: 0.1.0
 
 authors:
@@ -6,7 +6,7 @@ authors:
 
 targets:
   map_runner_cr:
-    main: src/map_runner_cr.cr
+    main: src/push_along_cr.cr
 crystal: 1.2.1
 
 dependencies:

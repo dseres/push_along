@@ -1,5 +1,5 @@
 require "spec-kemal"
 require "spec"
 
-require "../src/map_runner_cr"
-include MapRunnerCr
+require "../src/push_along_cr"
+include PushAlong

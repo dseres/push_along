@@ -1,7 +1,7 @@
 require "./spec_helper"
 
  
-describe MapRunnerCr do
+describe PushAlong do
   describe ConsoleJob do
     describe ".new" do
       it "A new job having proper values" do

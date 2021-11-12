@@ -1,6 +1,6 @@
 require "dag"
 
-module MapRunnerCr
+module PushAlong
 
     # Represents the status of a job.
     enum JobStatus

@@ -1,7 +1,7 @@
 require "dag"
 require "job"
 
-module MapRunnerCr
+module PushAlong
   class Map
     property name : String
     jobs = Dag::Graph(Job).new
