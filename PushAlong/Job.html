@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.1.1">
+<meta name="crystal_docs.project_version" content="master">
+<meta name="crystal_docs.project_name" content="push_along">
+
+
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+  <meta name="repository-name" content="push_along">
+  <title>PushAlong::Job - push_along master</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "../";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="../index.html">
+          push_along
+        </a>
+      </h1>
+
+      <span class="project-version">
+        master
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="push_along/PushAlong" data-name="pushalong">
+      <a href="../PushAlong.html">PushAlong</a>
+      
+        <ul>
+  
+  <li class=" " data-id="push_along/PushAlong/ConsoleJob" data-name="pushalong::consolejob">
+      <a href="../PushAlong/ConsoleJob.html">ConsoleJob</a>
+      
+    </li>
+  
+  <li class=" current" data-id="push_along/PushAlong/Job" data-name="pushalong::job">
+      <a href="../PushAlong/Job.html">Job</a>
+      
+    </li>
+  
+  <li class=" " data-id="push_along/PushAlong/JobStatus" data-name="pushalong::jobstatus">
+      <a href="../PushAlong/JobStatus.html">JobStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="push_along/PushAlong/Map" data-name="pushalong::map">
+      <a href="../PushAlong/Map.html">Map</a>
+      
+    </li>
+  
+  <li class=" " data-id="push_along/PushAlong/Result" data-name="pushalong::result">
+      <a href="../PushAlong/Result.html">Result</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">module</span> PushAlong::Job
+
+</h1>
+
+
+
+
+
+  <h2>
+    <a id="overview" class="anchor" href="#overview">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Overview
+  </h2>
+
+  <p>A job module. Every type of jobs should include this abstrat module.</p>
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="direct-including-types" class="anchor" href="#direct-including-types">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Direct including types
+  </h2>
+  <ul class="other-types-list">
+    
+      <li class="other-type"><a href="../PushAlong/ConsoleJob.html">PushAlong::ConsoleJob</a></li>
+    
+  </ul>
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L29" target="_blank">
+        job.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28name%2Cdescription%3D%22%22%2Ctimeout%3D0%2Cdependencies%3D%5B%5DofJob%29-class-method" class="signature"><strong>.new</strong>(name, description = <span class="s">&quot;&quot;</span>, timeout = <span class="n">0</span>, dependencies = <span class="o">[]</span> <span class="k">of</span> <span class="t">Job</span>)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#add_dependency%28other%3AJob%29-instance-method" class="signature"><strong>#add_dependency</strong>(other : Job)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#dependencies%3AArray%28Job%29-instance-method" class="signature"><strong>#dependencies</strong> : Array(Job)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3AString-instance-method" class="signature"><strong>#description</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#hash-instance-method" class="signature"><strong>#hash</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#name%3AString-instance-method" class="signature"><strong>#name</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#perform%3ATuple%28Process%3A%3AStatus%2CString%29-instance-method" class="signature"><strong>#perform</strong> : Tuple(Process::Status, String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#run-instance-method" class="signature"><strong>#run</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#running_time-instance-method" class="signature"><strong>#running_time</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#status-instance-method" class="signature"><strong>#status</strong></a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#timeout%3AInt32-instance-method" class="signature"><strong>#timeout</strong> : Int32</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(name,description=&quot;&quot;,timeout=0,dependencies=[]ofJob)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(name, description = <span class="s">&quot;&quot;</span>, timeout = <span class="n">0</span>, dependencies = <span class="o">[]</span> <span class="k">of</span> <span class="t">Job</span>)
+
+        <a class="method-permalink" href="#new%28name%2Cdescription%3D%22%22%2Ctimeout%3D0%2Cdependencies%3D%5B%5DofJob%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L38" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="add_dependency(other:Job)-instance-method">
+      <div class="signature">
+        
+        def <strong>add_dependency</strong>(other : <a href="../PushAlong/Job.html">Job</a>)
+
+        <a class="method-permalink" href="#add_dependency%28other%3AJob%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L44" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="dependencies:Array(Job)-instance-method">
+      <div class="signature">
+        
+        def <strong>dependencies</strong> : Array(<a href="../PushAlong/Job.html">Job</a>)
+
+        <a class="method-permalink" href="#dependencies%3AArray%28Job%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L33" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description:String-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : String
+
+        <a class="method-permalink" href="#description%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="hash-instance-method">
+      <div class="signature">
+        
+        def <strong>hash</strong>
+
+        <a class="method-permalink" href="#hash-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L40" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="name:String-instance-method">
+      <div class="signature">
+        
+        def <strong>name</strong> : String
+
+        <a class="method-permalink" href="#name%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L30" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="perform:Tuple(Process::Status,String)-instance-method">
+      <div class="signature">
+        abstract 
+        def <strong>perform</strong> : Tuple(Process::Status, String)
+
+        <a class="method-permalink" href="#perform%3ATuple%28Process%3A%3AStatus%2CString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L48" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="run-instance-method">
+      <div class="signature">
+        
+        def <strong>run</strong>
+
+        <a class="method-permalink" href="#run-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="running_time-instance-method">
+      <div class="signature">
+        
+        def <strong>running_time</strong>
+
+        <a class="method-permalink" href="#running_time-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L32" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="status-instance-method">
+      <div class="signature">
+        
+        def <strong>status</strong>
+
+        <a class="method-permalink" href="#status-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L35" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="timeout:Int32-instance-method">
+      <div class="signature">
+        
+        def <strong>timeout</strong> : Int32
+
+        <a class="method-permalink" href="#timeout%3AInt32-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/dseres/push_along/blob/3249b9cc3be67dd1b2bfef4fc61a7d8378968dc4/src/job.cr#L36" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
