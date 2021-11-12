@@ -2,9 +2,9 @@
 
 [![Built with Crystal](https://img.shields.io/badge/built%20with-crystal-000000.svg?style=flat-square)](https://crystal-lang.org/)
 [![Using Kemal](https://img.shields.io/badge/using-kemal-orange.svg?style=flat-square)](https://kemalcr.com/)
-[![Crystal CI](https://github.com/runcobo/runcobo/actions/workflows/crystal.yml/badge.svg)](https://github.com/dseres/map_runner_cr/actions/workflows/crystal.yml)
-[![GitHub release](https://img.shields.io/github/release/dseres/map_runner_cr.svg)](https://github.com/dseres/map_runner_cr/releases)
-[![api docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://dseres.github.io/map_runner_cr/)
+[![Crystal CI](https://github.com/runcobo/runcobo/actions/workflows/crystal.yml/badge.svg)](https://github.com/dseres/push_along/actions/workflows/crystal.yml)
+[![GitHub release](https://img.shields.io/github/release/dseres/push_along.svg)](https://github.com/dseres/push_along/releases)
+[![api docs](https://img.shields.io/badge/docs-available-brightgreen.svg)](https://dseres.github.io/push_along/)
 
 A map runner program written in [crystal](https://crystal-lang.org/) programming languge using [Kemal](https://kemalcr.com/) web API framework.
 ## Installation
@@ -21,7 +21,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/map_runner_cr/fork>)
+1. Fork it (<https://github.com/your-github-user/push_along/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

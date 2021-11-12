@@ -1,5 +1,5 @@
 require "dag"
-require "job"
+require "./job"
 
 module PushAlong
   class Map

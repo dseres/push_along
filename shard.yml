@@ -5,7 +5,7 @@ authors:
   - dseres <dseres001@gmail.com>
 
 targets:
-  map_runner_cr:
+  push_along:
     main: src/push_along_cr.cr
 crystal: 1.2.1
 
